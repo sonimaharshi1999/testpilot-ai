@@ -1,0 +1,102 @@
+======================================================================
+  TestPilot AI - Intelligent Test Generation Framework
+======================================================================
+
+Author: Maharshi Soni
+Category: qa-ai-automation
+Difficulty: advanced
+
+----------------------------------------------------------------------
+DESCRIPTION
+----------------------------------------------------------------------
+A pip-installable test generation framework using AST parsing. Generates comprehensive pytest suites with boundary value analysis, equivalence partitioning, and LLM-enhanced generation.
+
+----------------------------------------------------------------------
+TECH STACK
+----------------------------------------------------------------------
+  - click
+  - pydantic
+  - pytest
+  - jinja2
+
+----------------------------------------------------------------------
+FEATURES
+----------------------------------------------------------------------
+  * AST-based code analysis
+  * Boundary value test generation
+  * Equivalence partitioning
+  * LLM-enhanced generation (Claude CLI default)
+  * pytest plugin
+  * Coverage gap detection
+
+----------------------------------------------------------------------
+SAMPLE INPUT
+----------------------------------------------------------------------
+  Python source files
+
+  Example:
+    testpilot generate --source src/ --output tests/
+
+----------------------------------------------------------------------
+SAMPLE OUTPUT
+----------------------------------------------------------------------
+  Generated pytest test files
+
+  Example:
+    testpilot analyze --source calculator.py
+
+----------------------------------------------------------------------
+PROJECT STRUCTURE
+----------------------------------------------------------------------
+  .gitignore
+  LICENSE
+  project-idea.json
+  pyproject.toml
+  README.md
+  .github/workflows/test.yml
+  samples/calculator.py
+  samples/string_utils.py
+  src/testpilot/analyzer.py
+  src/testpilot/cli.py
+  src/testpilot/generator.py
+  src/testpilot/models.py
+  src/testpilot/plugin.py
+  src/testpilot/py.typed
+  src/testpilot/report.py
+  src/testpilot/strategies.py
+  src/testpilot/__init__.py
+  src/testpilot/__version__.py
+  src/testpilot/providers/api_provider.py
+  src/testpilot/providers/base.py
+  src/testpilot/providers/claude_cli.py
+  src/testpilot/providers/none_provider.py
+  src/testpilot/providers/__init__.py
+  src/testpilot/templates/test_module.py.j2
+  src/testpilot_ai.egg-info/dependency_links.txt
+  src/testpilot_ai.egg-info/entry_points.txt
+  src/testpilot_ai.egg-info/PKG-INFO
+  src/testpilot_ai.egg-info/requires.txt
+  src/testpilot_ai.egg-info/SOURCES.txt
+  src/testpilot_ai.egg-info/top_level.txt
+  tests/conftest.py
+  tests/test_analyzer.py
+  tests/test_cli.py
+  tests/test_generator.py
+  tests/test_models.py
+  tests/test_plugin.py
+  tests/test_providers.py
+  tests/test_report.py
+  tests/test_strategies.py
+  tests/__init__.py
+
+----------------------------------------------------------------------
+TEST RESULTS
+----------------------------------------------------------------------
+  Status: PASSED
+  Tests Run: 66
+  Passed: 66
+  Failed: 0
+
+======================================================================
+  Author: Maharshi Soni  |  License: MIT
+======================================================================

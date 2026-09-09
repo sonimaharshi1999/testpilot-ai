@@ -1,0 +1,30 @@
+{
+  "project_name": "testpilot-ai",
+  "title": "TestPilot AI - Intelligent Test Generation Framework",
+  "category": "qa-ai-automation",
+  "difficulty": "advanced",
+  "description": "A pip-installable test generation framework using AST parsing. Generates comprehensive pytest suites with boundary value analysis, equivalence partitioning, and LLM-enhanced generation.",
+  "tech_stack": [
+    "click",
+    "pydantic",
+    "pytest",
+    "jinja2"
+  ],
+  "features": [
+    "AST-based code analysis",
+    "Boundary value test generation",
+    "Equivalence partitioning",
+    "LLM-enhanced generation (Claude CLI default)",
+    "pytest plugin",
+    "Coverage gap detection"
+  ],
+  "test_status": "PASSED",
+  "sample_input": {
+    "description": "Python source files",
+    "example": "testpilot generate --source src/ --output tests/"
+  },
+  "sample_output": {
+    "description": "Generated pytest test files",
+    "example": "testpilot analyze --source calculator.py"
+  }
+}
