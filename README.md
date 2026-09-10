@@ -2,9 +2,14 @@
 
 [![Tests](https://github.com/msoni029/testpilot-ai/actions/workflows/test.yml/badge.svg)](https://github.com/msoni029/testpilot-ai/actions/workflows/test.yml)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE) [![PyPI](https://img.shields.io/pypi/v/testpilot-ai)](https://pypi.org/project/testpilot-ai/) [![Downloads](https://img.shields.io/pypi/dm/testpilot-ai)](https://pypi.org/project/testpilot-ai/)
 
 A pip-installable test generation framework that analyzes Python source code using AST parsing and generates comprehensive pytest test suites. Includes boundary value analysis, equivalence partitioning, mutation testing detection, and optional LLM-enhanced test case generation. Works as both a CLI tool and a pytest plugin.
+
+
+`ash
+pip install testpilot-ai
+`
 
 ## Why I Built This
 
